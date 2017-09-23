@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: gray;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+img{
+    height: 250px;
+    width: inherit;
+    
+}
+
+body{
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+    color: floralwhite;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    background-color:steelblue;
+    color:floralwhite;
+    width: 600px;
+}
