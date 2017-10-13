@@ -14,9 +14,9 @@ try
 
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
     
-    foreach ($db->query('SELECT * FROM Ability') as $row)
+    foreach ($db->query('SELECT * FROM ability') as $row)
     {
-        echo $row['STR'];
+        echo $row['str'];
         echo '<br\>';
         
     }
