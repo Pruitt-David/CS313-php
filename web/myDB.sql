@@ -1,5 +1,3 @@
-CREATE DATABASE characterSheet
-
 CREATE TABLE character
 (
     id SERIAL PRIMARY KEY NOT NULL, 
@@ -16,7 +14,7 @@ CREATE TABLE Ability
     STR int NOT NULL,
     DEX int NOT NULL,
     CON int NOT NULL,
-    INT int NOT NULL,
+    INTE int NOT NULL,
     WIS int NOT NULL,
     CHA int NOT NULL
 );
@@ -60,17 +58,17 @@ CREATE TABLE Equipment
     ARMOR_Name  VARCHAR(80),
     armor_class int,
     money int
-)
+);
 
 CREATE TABLE Saves(
     id SERIAL PRIMARY KEY NOT NULL,
     STR BOOL,
     DEX BOOL,
     CON BOOL
-    INT BOOL,
+    INTE BOOL,
     WIS BOOL,
     CHA BOOL    
-)
+);
 
 CREATE TABLE Proficiencies
 (
