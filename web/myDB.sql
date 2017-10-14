@@ -42,6 +42,7 @@ CREATE TABLE Skill
     Survival INT
 );
 
+
 CREATE TABLE Stats
 (
     id SERIAL PRIMARY KEY NOT NULL,    

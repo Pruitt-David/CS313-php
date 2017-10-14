@@ -73,8 +73,7 @@ try
         echo "<h3>Stealth</h3>";
         echo $row['Stealth'];
         echo "<h3>Survival</h3>";
-        echo $row['Survival'];
-        
+        echo $row['Survival'];    
     }
 }
 catch (PDOException $ex)
