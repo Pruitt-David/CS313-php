@@ -38,7 +38,7 @@ try
         
     }
     
-    foreach ($db->query('SELECT * FROM Skill') as $row)
+    foreach ($db->query('SELECT * FROM skill') as $row)
     {
         echo "<h3>Acrobatics</h3>";
         echo $row['Arcrobatics'];
