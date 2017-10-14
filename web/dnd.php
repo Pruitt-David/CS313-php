@@ -16,11 +16,22 @@ try
     
     foreach ($db->query('SELECT * FROM ability') as $row)
     {
+        echo "<p>STR</p>";
         echo $row['str'];
+
+        echo "<p>Dex</p>";
         echo $row['dex'];
+        
+        echo "<p>CON</p>";
         echo $row['con'];
+        
+        echo "<p>INT</p>";
         echo $row['int'];
+        
+        echo "<p>WIS</p>";
         echo $row['wis'];
+        
+        echo "<p>CHA</p>";
         echo $row['cha'];
         
         echo '<br\>';
