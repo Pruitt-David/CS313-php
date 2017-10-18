@@ -37,45 +37,46 @@ try
     }
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
+        /*
         echo "<p>Deception</p>";
         echo $row['deception'];        
-        
-        /*
-        echo "<p>Acrobatics</p>";
-        echo $row['Arcrobatics'];
         */
+        
+        echo "<p>Acrobatics</p>";
+        echo $row['arcrobatics'];
+        
         echo "<p>Animal Handling</p>";
-        echo $row['Animal_Handling'];
+        echo $row['animal_handling'];
         echo "<p>Arcana</p>";
-        echo $row['Arcana'];
+        echo $row['arcana'];
         echo "<p>Athletics</p>";
-        echo $row['Athletics'];
+        echo $row['athletics'];
         echo "<p>Deception</p>";
-        echo $row['Deception'];
+        echo $row['deception'];
         echo "<p>History</p>";
-        echo $row['History'];
+        echo $row['history'];
         echo "<p>Insight</p>";
-        echo $row['Insight'];
+        echo $row['insight'];
         echo "<p>Intimidation</p>";
-        echo $row['Intimidation'];
+        echo $row['intimidation'];
         echo "<p>Medicine</p>";
-        echo $row['Medicine'];
+        echo $row['medicine'];
         echo "<p>Nature</p>";
-        echo $row['Nature'];
+        echo $row['nature'];
         echo "<p>Perception</p>";
-        echo $row['Perception'];
+        echo $row['perception'];
         echo "<p>Performance</p>";
-        echo $row['Performance'];
+        echo $row['performance'];
         echo "<p>Persuasion</p>";
-        echo $row['Persuasion'];
+        echo $row['persuasion'];
         echo "<p>Religion</p>";
-        echo $row['Religion'];
+        echo $row['religion'];
         echo "<p>Sleight of Hand</p>";
-        echo $row['Sleight_of_Hand'];
+        echo $row['sleight_of_hand'];
         echo "<p>Stealth</p>";
-        echo $row['Stealth'];
+        echo $row['stealth'];
         echo "<p>Survival</p>";
-        echo $row['Survival'];    
+        echo $row['survival'];    
     
     }
     
