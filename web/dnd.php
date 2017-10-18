@@ -47,68 +47,104 @@ try
         echo "</td></tr>";
     }
     echo "</table>";
-    
+    echo "<table style='width:30%'>
+  <tr>
+    <th>Acrobatics</th>
+    <th>Animal Handling</th> 
+    <th>Arcana</th>
+    <th>Athletics</th>
+    <th>Deception</th>
+    <th>History</th>
+    <th>Insight</th>
+    <th>Intimidation</th> 
+    <th>Medicine</th>
+    <th>Nature</th>
+    <th>Perception</th>
+    <th>Performance</th>
+    <th>Persuasion</th>
+    <th>Religion</th> 
+    <th>Sleight of Hand</th>
+    <th>Stealth</th>
+    <th>Survival</th>
+  </tr>";
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
-        echo "<p>Acrobatics</p>";
-        echo $row['arcrobatics'];
         
-        echo "<p>Animal Handling</p>";
-        echo $row['animal_handling'];
-        echo "<p>Arcana</p>";
-        echo $row['arcana'];
-        echo "<p>Athletics</p>";
-        echo $row['athletics'];
-        echo "<p>Deception</p>";
-        echo $row['deception'];
-        echo "<p>History</p>";
-        echo $row['history'];
-        echo "<p>Insight</p>";
-        echo $row['insight'];
-        echo "<p>Intimidation</p>";
-        echo $row['intimidation'];
-        echo "<p>Medicine</p>";
-        echo $row['medicine'];
-        echo "<p>Nature</p>";
-        echo $row['nature'];
-        echo "<p>Perception</p>";
-        echo $row['perception'];
-        echo "<p>Performance</p>";
-        echo $row['performance'];
-        echo "<p>Persuasion</p>";
-        echo $row['persuasion'];
-        echo "<p>Religion</p>";
-        echo $row['religion'];
-        echo "<p>Sleight of Hand</p>";
-        echo $row['sleight_of_hand'];
-        echo "<p>Stealth</p>";
-        echo $row['stealth'];
-        echo "<p>Survival</p>";
-        echo $row['survival'];    
-    
+        echo "<tr><td>";
+        echo $row['arcrobatics']; 
+        echo "</td>";
+        
+        echo "<td>";
+        echo $row['animal_handling']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['arcana']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['athletics']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['deception']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['history']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['insight']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['intimidation']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['medicine']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['nature']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['perception']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['performance']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['persuasion']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['religion']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['sleight_of_hand']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['stealth']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['survival']; 
+        echo "</td>"; 
     }
-    
+    echo "</table>";
     foreach ($db->query('SELECT * FROM stats') as $row)
     {
-        echo "<p>hitDie</p>";
+        echo "<td>hitDie</td>";
         echo $row['hitdie'];   
-        echo "<p>Speed</p>";
+        echo "<td>Speed</td>";
         echo $row['speed'];
     }
     
     foreach ($db->query('SELECT * FROM equipment') as $row)
     {
-        echo "<p>Weapon</p>";
+        echo "<td>Weapon</td>";
         echo $row['weapon_name'];   
-        echo "<p>weapon Damage</p>";
+        echo "<td>weapon Damage</td>";
         echo $row['weapon_damage'];
-        echo "<p>Type</p>";
+        echo "<td>Type</td>";
         echo $row['weapon_damage_type'];   
-        echo "<p>Armor</p>";
+        echo "<td>Armor</td>";
         echo $row['armor_name'];
-        echo "<p>Armor Class</p>";
+        echo "<td>Armor Class</td>";
         echo $row['armor_class'];
-        echo "<p>Money</p>";
+        echo "<td>Money</td>";
         echo $row['money'];
         
     }
