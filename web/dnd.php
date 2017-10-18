@@ -15,21 +15,22 @@ try
     
     $db = new   PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName",   $dbUser, $dbPassword);
     
-    foreach ($db->query('SELECT * FROM ability') as $row)
-    {
-        echo "<table><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>"
-        echo $row['str'];
+    echo "<table><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>"
 
+    foreach ($db->query('SELECT * FROM ability') as $row)
+    {    
+        echo $row['str'];
         echo $row['dex'];
         echo $row['con'];
          
         echo $row['int'];
         echo $row['wis'];
         echo $row['cha'];
-        echo "</table>"
+        
         echo '<br\>';        
     }
-    
+    echo "</table>"
+        
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
         echo "<br/><br/><br/><br/><br/><br/><p>Acrobatics</p>";
