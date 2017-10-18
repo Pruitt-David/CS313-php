@@ -39,7 +39,7 @@ try
     
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
-        echo "<br/><br/><br/><br/><br/><br/><p>Acrobatics</p>";
+        echo "<br/><br/><br/><br/><br/><br/>";
         echo $row['Arcrobatics'];
         /*
         echo "<h3>Acrobatics</h3>";
