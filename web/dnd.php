@@ -36,7 +36,7 @@ try
         echo $row['cha'];        
         echo '<br\>';        
     }
-    
+    /*
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
         echo "<h3>Acrobatics</h3>";
@@ -74,6 +74,7 @@ try
         echo "<h3>Survival</h3>";
         echo $row['Survival'];    
     }
+    */
 }
 catch (PDOException $ex)
 {
