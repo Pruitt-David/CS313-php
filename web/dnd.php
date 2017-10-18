@@ -91,7 +91,7 @@ try
         echo "<p>Type</p>";
         echo $row['weapon_damage_type'];   
         echo "<p>Armor</p>";
-        echo $row['armor_type'];
+        echo $row['armor_name'];
         echo "<p>Armor Class</p>";
         echo $row['armor_class'];
         echo "<p>Money</p>";
