@@ -82,6 +82,23 @@ try
         echo $row['speed'];
     }
     
+    foreach ($db->query('SELECT * FROM equipment') as $row)
+    {
+        echo "<p>Weapon</p>";
+        echo $row['weapon_name'];   
+        echo "<p>weapon Damage</p>";
+        echo $row['weapon_damage'];
+        echo "<p>Type</p>";
+        echo $row['weapon_damage_type'];   
+        echo "<p>Armor</p>";
+        echo $row['armor_type'];
+        echo "<p>Armor Class</p>";
+        echo $row['armor_class'];
+        echo "<p>Money</p>";
+        echo $row['money'];
+        
+    }
+    
 }
 catch (PDOException $ex)
 {
