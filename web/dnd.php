@@ -14,6 +14,25 @@ try
     $dbName = ltrim($dbopts["path"],'/');
     
     $db = new   PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName",   $dbUser, $dbPassword);
+    
+    echo "<table style='width:100%'>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>";
+        
     foreach ($db->query('SELECT * FROM ability') as $row)
     {
         echo "<p>STR</p>";
@@ -37,11 +56,6 @@ try
     }
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
-        /*
-        echo "<p>Deception</p>";
-        echo $row['deception'];        
-        */
-        
         echo "<p>Acrobatics</p>";
         echo $row['arcrobatics'];
         
