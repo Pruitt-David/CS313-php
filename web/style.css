@@ -29,22 +29,19 @@ h1{
 }
 
 h2{
-    text-align: center;
     color: yellow;
 }
 
-h3{
-    text-align: center;
-}
+
 
 p{
-    text-align: center;
+    
     background-color:steelblue;
     color:floralwhite;
-    width: 50%;
 }
+
 p1{
-    text-align: center;
+ 
     background-color:steelblue;
     color:floralwhite;
 }
@@ -74,5 +71,5 @@ form{
 
 div{
    display:inline-block; 
-       width:50%; 
+      
 }
