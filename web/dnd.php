@@ -37,42 +37,42 @@ try
         echo '<br\>';        
     }
     
-    foreach ($db->query('SELECT * FROM skill') as $Xrow)
+    foreach ($db->query('SELECT * FROM skill') as $row)
     {
         echo "<h3>Acrobatics</h3>";
-        echo $Xrow['Arcrobatics'];
+        echo $row['Arcrobatics'];
         echo "<h3>Animal Handling</h3>";
-        echo $Xrow['Animal_Handling'];
+        echo $row['Animal_Handling'];
         echo "<h3>Arcana</h3>";
-        echo $Xrow['Arcana'];
+        echo $row['Arcana'];
         echo "<h3>Athletics</h3>";
-        echo $Xrow['Athletics'];
+        echo $row['Athletics'];
         echo "<h3>Deception</h3>";
-        echo $Xrow['Deception'];
+        echo $row['Deception'];
         echo "<h3>History</h3>";
-        echo $Xrow['History'];
+        echo $row['History'];
         echo "<h3>Insight</h3>";
-        echo $Xrow['Insight'];
+        echo $row['Insight'];
         echo "<h3>Intimidation</h3>";
-        echo $Xrow['Intimidation'];
+        echo $row['Intimidation'];
         echo "<h3>Medicine</h3>";
-        echo $Xrow['Medicine'];
+        echo $row['Medicine'];
         echo "<h3>Nature</h3>";
-        echo $Xrow['Nature'];
+        echo $row['Nature'];
         echo "<h3>Perception</h3>";
-        echo $Xrow['Perception'];
+        echo $row['Perception'];
         echo "<h3>Performance</h3>";
-        echo $Xrow['Performance'];
+        echo $row['Performance'];
         echo "<h3>Persuasion</h3>";
-        echo $Xrow['Persuasion'];
+        echo $row['Persuasion'];
         echo "<h3>Religion</h3>";
-        echo $Xrow['Religion'];
+        echo $row['Religion'];
         echo "<h3>Sleight of Hand</h3>";
-        echo $Xrow['Sleight_of_Hand'];
+        echo $row['Sleight_of_Hand'];
         echo "<h3>Stealth</h3>";
-        echo $Xrow['Stealth'];
+        echo $row['Stealth'];
         echo "<h3>Survival</h3>";
-        echo $Xrow['Survival'];    
+        echo $row['Survival'];    
     }
 }
 catch (PDOException $ex)
