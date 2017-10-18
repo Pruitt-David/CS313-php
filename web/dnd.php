@@ -23,13 +23,11 @@ try
     <th>INT</th>
     <th>WIS</th>
     <th>CHA</th>
-  </tr>
-  <tr>
-    ";
+  </tr>";
         
     foreach ($db->query('SELECT * FROM ability') as $row)
     {
-        echo "<td>";
+        echo "<tr><td>";
         echo $row['str']; 
         echo "</td>";
         echo "<td>";
@@ -46,26 +44,9 @@ try
         echo "</td>";
         echo "<td>";
         echo $row['cha']; 
-        echo "</td>";
-        
-        /*
-        echo "<td>DEX</td>";
-        echo $row['dex'];
-         
-        echo "<td>CON</td>";
-        echo $row['con'];
-         
-        echo "<td>INT</td>";
-        echo $row['int'];
-        
-        echo "<td>WIS</td>";
-        echo $row['wis'];
-         
-        echo "<td>CHA</td>";
-        echo $row['cha'];            
-    */
+        echo "</td></tr>";
     }
-    echo "</tr></table>";
+    echo "</table>";
     
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
