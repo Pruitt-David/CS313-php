@@ -25,22 +25,29 @@ try
     <th>CHA</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-    <td>50</td>
-    <td>50</td>
-    <td>50</td>";
+    ";
         
     foreach ($db->query('SELECT * FROM ability') as $row)
     {
-        echo "<td>$row['str']</td>";
-        //echo $row['str'];
-        echo "<td>$row['dex']</td>";
-        echo "<td>$row['con']</td>";
-        echo "<td>$row['int']</td>";
-        echo "<td>$row['wis']</td>";
-        echo "<td>$row['cha']</td>";
+        echo "<td>";
+        echo $row['str']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['dex']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['con']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['int']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['wis']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['cha']; 
+        echo "</td>";
+        
         /*
         echo "<td>DEX</td>";
         echo $row['dex'];
