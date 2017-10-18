@@ -32,17 +32,14 @@ try
         echo $row['wis'];
         
         echo "<p>CHA</p>";
-        echo $row['cha'];
-        
-        
-        
+        echo $row['cha'];        
         echo '<br\>';
         
     }
     
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
-        echo "<p>Acrobatics</p>";
+        echo "<h3>Acrobatics</h3>";
         echo $row['Arcrobatics'];
         echo "<h3>Animal Handling</h3>";
         echo $row['Animal_Handling'];
