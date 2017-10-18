@@ -37,7 +37,10 @@ try
     }
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
-
+        echo "<p>Deception</p>";
+        echo $row['deception'];        
+        
+        /*
         echo "<h3>Acrobatics</h3>";
         echo $row['Arcrobatics'];
         echo "<h3>Animal Handling</h3>";
@@ -72,6 +75,7 @@ try
         echo $row['Stealth'];
         echo "<h3>Survival</h3>";
         echo $row['Survival'];    
+    */
     }
     
     foreach ($db->query('SELECT * FROM stats') as $row)
