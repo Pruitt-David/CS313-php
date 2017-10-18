@@ -15,7 +15,7 @@ try
     
     $db = new   PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName",   $dbUser, $dbPassword);
     
-    echo "<table style='width:100%'>
+    echo "<table style='width:30%'>
   <tr>
     <th>STR</th>
     <th>DEX</th> 
@@ -30,39 +30,36 @@ try
     <td>50</td>
     <td>50</td>
     <td>50</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-    <td>50</td>
-    <td>50</td>
-    <td>50</td>
-  </tr>
-</table>";
+    <td>50</td>";
         
     foreach ($db->query('SELECT * FROM ability') as $row)
     {
-        echo "<p>STR</p>";
-        echo $row['str'];
-
-        echo "<p>DEX</p>";
+        echo "<td>$row['str']</td>";
+        //echo $row['str'];
+        echo "<td>$row['dex']</td>";
+        echo "<td>$row['con']</td>";
+        echo "<td>$row['int']</td>";
+        echo "<td>$row['wis']</td>";
+        echo "<td>$row['cha']</td>";
+        /*
+        echo "<td>DEX</td>";
         echo $row['dex'];
          
-        echo "<p>CON</p>";
+        echo "<td>CON</td>";
         echo $row['con'];
          
-        echo "<p>INT</p>";
+        echo "<td>INT</td>";
         echo $row['int'];
         
-        echo "<p>WIS</p>";
+        echo "<td>WIS</td>";
         echo $row['wis'];
          
-        echo "<p>CHA</p>";
-        echo $row['cha'];        
-        echo '<br\>';        
+        echo "<td>CHA</td>";
+        echo $row['cha'];            
+    */
     }
+    echo "</tr></table>";
+    
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
         echo "<p>Acrobatics</p>";
