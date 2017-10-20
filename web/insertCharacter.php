@@ -35,12 +35,11 @@ try
 	// Now go through each topic id in the list from the user's checkboxes
 	foreach ($characterIds as $characterId)
 	{
-		echo "ScriptureId: $scriptureId, topicId: $topicId";
-		// Again, first prepare the statement
-		$statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES(:scriptureId, :topicId)');
+		echo "characterId: $characterId, characterId: $characterId";
+        $statement = $db->prepare('INSERT INTO character(name, class, level, race, alignment) VALUES(:name, :class, :level, :race, :alignment)');
 		// Then, bind the values
-		$statement->bindValue(':scriptureId', $scriptureId);
-		$statement->bindValue(':topicId', $topicId);
+		$statement->bindValue(':characterId', $characterId);
+		$statement->bindValue(':characterId', $characterId);
 		$statement->execute();
 	}
 }
