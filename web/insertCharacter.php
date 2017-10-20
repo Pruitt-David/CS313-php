@@ -24,7 +24,7 @@ $topicIds = $_POST['chkTopics'];
 // echo "verse=$verse\n";
 // echo "content=$content\n";
 // we could (and should!) put additional checks here to verify that all this data is actually provided
-require("IndexDND.php");
+require("dbConnect.php");
 $db = get_db();
 try
 {
