@@ -1,22 +1,12 @@
 <?php
-/**********************************************************
-* File: insertTopic.php
-* Author: Br. Burton
-* 
-* Description: Takes input posted from topicEntry.php
-*   This file enters a new scripture into the database
-*   along with its associated topics.
-*
-*   This file does NOT do any rendering at all,
-*   instead it redirects the user to showTopics.php to see
-*   the resulting list.
-***********************************************************/
+
 // get the data from the POST
-$book = $_POST['txtBook'];
-$chapter = $_POST['txtChapter'];
-$verse = $_POST['txtVerse'];
-$content = $_POST['txtContent'];
-$topicIds = $_POST['chkTopics'];
+$name = $_POST['name'];
+$class = $_POST['class'];
+$level = $_POST['level'];
+$race = $_POST['race'];
+$alignment = $_POST['alignment'];
+$characterIds = $_POST['chkcharacter'];
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
 // echo "book=$book\n";
@@ -30,19 +20,20 @@ try
 {
 	// Add the Scripture
 	// We do this by preparing the query with placeholder values
-	$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
+	$query = 'INSERT INTO character(name, class, level, race, alignment) VALUES(:name, :class, :level, :race, :alignment)';
 	$statement = $db->prepare($query);
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
-	$statement->bindValue(':book', $book);
-	$statement->bindValue(':chapter', $chapter);
-	$statement->bindValue(':verse', $verse);
-	$statement->bindValue(':content', $content);
+	$statement->bindValue(':name', $name);
+	$statement->bindValue(':class', $class);
+	$statement->bindValue(':level', $level);
+	$statement->bindValue(':race', $race);
+	$statement->bindValue(':alignment', $alignment);
 	$statement->execute();
 	// get the new id
-	$scriptureId = $db->lastInsertId("scripture_id_seq");
+	$characterId = $db->lastInsertId("character_id_seq");
 	// Now go through each topic id in the list from the user's checkboxes
-	foreach ($topicIds as $topicId)
+	foreach ($characterIds as $characterId)
 	{
 		echo "ScriptureId: $scriptureId, topicId: $topicId";
 		// Again, first prepare the statement
