@@ -121,34 +121,52 @@ try
         echo "</td>";
         echo "<td>";
         echo $row['survival']; 
-        echo "</td>"; 
+        echo "</td></tr>"; 
     }
     echo "</table>";
+     echo "</table>";
+    echo "<table style='width:30%'>
+  <tr>
+    <th>HitDie</th>
+    <th>Speed</th>
+  </tr>";
     foreach ($db->query('SELECT * FROM stats') as $row)
     {
-        echo "<td>hitDie</td>";
-        echo $row['hitdie'];   
-        echo "<td>Speed</td>";
-        echo $row['speed'];
+        echo "<tr><td>";
+        echo $row['hitdie']; 
+        echo "</td>";
+        echo "<td>";
+        echo $row['speed']; 
+        echo "</td></tr>";
     }
+    echo "</table>";
+    
+    echo "<table style='width:30%'>
+    <tr>
+    <th>Weapon</th>
+    <th>Damage</th> 
+    <th>Damage Type</th>
+    <th>Armor</th>
+    <th>Armor Class</th>
+    <th>Money</th>
+    </tr>";
     
     foreach ($db->query('SELECT * FROM equipment') as $row)
     {
-        echo "<td>Weapon</td>";
-        echo $row['weapon_name'];   
-        echo "<td>weapon Damage</td>";
-        echo $row['weapon_damage'];
-        echo "<td>Type</td>";
-        echo $row['weapon_damage_type'];   
-        echo "<td>Armor</td>";
-        echo $row['armor_name'];
-        echo "<td>Armor Class</td>";
-        echo $row['armor_class'];
-        echo "<td>Money</td>";
-        echo $row['money'];
         
+        echo $row['weapon_name'];   
+       
+        echo $row['weapon_damage'];
+       
+        echo $row['weapon_damage_type'];   
+       
+        echo $row['armor_name'];
+        
+        echo $row['armor_class'];
+      
+        echo $row['money'];
     }
-    
+    echo "</table>";
 }
 catch (PDOException $ex)
 {
