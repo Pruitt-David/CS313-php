@@ -13,7 +13,33 @@ try
     $dbPassword = $dbopts["pass"];
     $dbName = ltrim($dbopts["path"],'/');
     
+    
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    
+    echo "<h3>Character Information</h3>";
+    echo "<table>
+    <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Level</th>
+        <th>Race</th>
+        <th>Alignment</th>
+    </tr>";
+    foreach ($db->query('SELECT * FROM character') as $row)
+    {
+        echo "<tr><td>";
+        echo $row['name'];
+        echo "</td><td>";
+        echo $row['class'];
+        echo "</td><td>";
+        echo $row['level'];
+        echo "</td><td>";
+        echo $row['race'];
+        echo "</td><td>";
+        echo $row['alignment'];
+        echo "</td></tr>";
+    }
+    echo "</table>";
     echo "<h3>Ability</h3>";
     echo "<table style='width:30%'>
   <tr>
