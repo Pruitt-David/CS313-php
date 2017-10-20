@@ -14,7 +14,7 @@ try
     $dbName = ltrim($dbopts["path"],'/');
     
     $db = new   PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName",   $dbUser, $dbPassword);
-    
+    echo "<h3>Ability</h3>";
     echo "<table style='width:30%'>
   <tr>
     <th>STR</th>
@@ -47,6 +47,7 @@ try
         echo "</td></tr>";
     }
     echo "</table>";
+    echo "<h3>Skill</h3>";
     echo "<table style='width:30%'>
   <tr>
     <th>Acrobatics</th>
@@ -124,7 +125,7 @@ try
         echo "</td></tr>"; 
     }
     echo "</table>";
-     echo "</table>";
+    echo "<h3>Stats</h3>";
     echo "<table style='width:30%'>
   <tr>
     <th>HitDie</th>
@@ -140,7 +141,7 @@ try
         echo "</td></tr>";
     }
     echo "</table>";
-    
+    echo "<h3>Equipment</h3>";
     echo "<table style='width:30%'>
     <tr>
     <th>Weapon</th>
