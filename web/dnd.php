@@ -153,18 +153,19 @@ try
     
     foreach ($db->query('SELECT * FROM equipment') as $row)
     {
-        
+        echo "<tr><td>";
         echo $row['weapon_name'];   
-       
+        echo "</td><td>"
         echo $row['weapon_damage'];
-       
+        echo "</td><td>" 
         echo $row['weapon_damage_type'];   
-       
+        echo "</td><td>"
         echo $row['armor_name'];
-        
+        echo "</td><td>"
         echo $row['armor_class'];
-      
+        echo "</td><td>"
         echo $row['money'];
+        echo "</td></tr>";
     }
     echo "</table>";
 }
