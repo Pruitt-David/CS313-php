@@ -29,6 +29,7 @@ try
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		echo '<p>';
+        
 		echo '<strong>' . $row['name'] . ' ' . $row['class'] . ':';
 		echo $row['level'] . '</strong>' . ' - ' . $row['race'];
         echo $row['alignment'] . '</strong>' . ' - ' . $row['alignment'];
