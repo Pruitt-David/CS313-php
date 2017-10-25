@@ -25,15 +25,15 @@ $db = get_db();
 
 <form id="mainForm" action="insertTopic.php" method="POST">
 
-	<input type="text" id="txtBook" name="txtBook"></input>
+	<input type="text" id="txtBook" name="txtBook">
 	<label for="txtBooK">Book</label>
 	<br /><br />
 
-	<input type="text" id="txtChapter" name="txtChapter"></input>
+	<input type="text" id="txtChapter" name="txtChapter">
 	<label for="txtChapter">Chapter</label>
 	<br /><br />
 
-	<input type="text" id="txtVerse" name="txtVerse"></input>
+	<input type="text" id="txtVerse" name="txtVerse">
 	<label for="txtVerse">Verse</label>
 	<br /><br />
 
@@ -69,7 +69,7 @@ try
 		// The trick here is that we need a unique id for each one. In this case,
 		// we use "chkTopics" followed by the id, so that it becomes something like
 		// "chkTopics1" and "chkTopics2", etc.
-		echo "<label for='chkTopics$id'>$name</label><br />";
+		echo "<label for='chkTopics$id'>$name</label><br/>";
 		// put a newline out there just to make our "view source" experience better
 		echo "\n";
 	}
@@ -85,7 +85,7 @@ catch (PDOException $ex)
 
 	<br />
 
-	<input type="submit" value="Add to Database" />
+	<input type="submit" value="Add to Database"/>
 
 </form>
 
