@@ -12,87 +12,87 @@
         ?>
         <form id="mainform" action="insert.php" method="POST">
             
-            Name<input type="text" id="txtName" name="txtName"><br/>
-            <label for="txtName">Name</label>
-            Class<input type="text" id="txtClass" name="txtClass"><br/>
+            <input type="text" id="txtName" name="txtName"> 
+            <label for="txtName">Name</label><br/>
+            Class<input type="text" id="txtClass" name="txtClass"> 
             
-            Level<input type="text" id="txtLevel" name="txtLevel"><br/>
+            Level<input type="text" id="txtLevel" name="txtLevel"> 
             
-            Race<input type="text" id="txtRace" name="txtRace"><br/>
+            Race<input type="text" id="txtRace" name="txtRace"> 
             
             Alignment<input type="text" id="txtAlignment" 
-                            name="txtAlignment"><br/>
+                            name="txtAlignment"> 
             
-            STR<input type="text" id="txtSTR" name="txtSTR"><br/>
+            STR<input type="text" id="txtSTR" name="txtSTR"> 
             
-            DEX<input type="text" id="txtDEX" name="txtDEX"><br/>
+            DEX<input type="text" id="txtDEX" name="txtDEX"> 
             
-            CON<input type="text" id="txtCON" name="txtCON"><br/>
+            CON<input type="text" id="txtCON" name="txtCON"> 
             
-            INT<input type="text" id="txtINT" name="txtINT"><br/>
+            INT<input type="text" id="txtINT" name="txtINT"> 
             
-            WIS<input type="text" id="txtWIS" name="txtWIS"><br/>
+            WIS<input type="text" id="txtWIS" name="txtWIS"> 
             
-            CHA<input type="text" id="txtCHA" name="txtCHA"><br/>
+            CHA<input type="text" id="txtCHA" name="txtCHA"> 
             
             
             Acrobatics<input type="text" id="txtAcrobatics" 
-                             name="txtAcrobatics"><br/>
+                             name="txtAcrobatics"> 
             
             Animal Handling<input type="text" id="txtAnimalHandling" 
-                                  name="txtAnimalHandling"><br/>
+                                  name="txtAnimalHandling"> 
            
-            Arcana<input type="text" id="txtArcana" name="txtArcana"><br/>
+            Arcana<input type="text" id="txtArcana" name="txtArcana"> 
            
             Athletics<input type="text" id="txtAthletics" 
-                            name="txtAthletics"><br/>
+                            name="txtAthletics"> 
             Deception<input type="text" id="txtDeception" 
-                            name="txtDeception"><br/>
+                            name="txtDeception"> 
            
-            History<input type="text" id="txtHistory" name="txtHistory"><br/>
+            History<input type="text" id="txtHistory" name="txtHistory"> 
             
-            Insight<input type="text" id="txtInsight" name="txtInsight"><br/>
+            Insight<input type="text" id="txtInsight" name="txtInsight"> 
            
             Intimidation<input type="text" id="txtIntimidation" 
-                               name="txtIntimidation"><br/>
+                               name="txtIntimidation"> 
            
             Medicine<input type="text" id="txtMedicine" name="txtMedicine">
-            <br/>
+             
            
-            Nature<input type="text" id="txtNature" name="txtNature"><br/>
+            Nature<input type="text" id="txtNature" name="txtNature"> 
             
             Perception<input type="text" id="txtPerception" 
-                             name="txtPerception"><br/>
+                             name="txtPerception"> 
            
             Performance<input type="text" id="txtPerformance" 
-                              name="txtPerformance"><br/>
+                              name="txtPerformance"> 
            
             Persuasion<input type="text" id="txtPersuasion" 
-                             name="txtPersuasion"><br/>
+                             name="txtPersuasion"> 
            
             Religion<input type="text" id="txtReligion" name="txtReligion">
-            <br/>
+             
            
             Sleight of Hand<input type="text" id="txtSleightOfHand" 
-                                  name="txtSleightOfHand"><br/>
+                                  name="txtSleightOfHand"> 
            
-            Stealth<input type="text" id="txtStealth" name="txtStealth"><br/>
+            Stealth<input type="text" id="txtStealth" name="txtStealth"> 
           
             Survival<input type="text" id="txtSurvival" name="txtSurvival">
-            <br/>
+             
           
-            HitDie<input type="text" id="txtHitDie" name="txtHitDie"><br/>
-            Speed<input type="text" id="txtSpeed" name="txtSpeed"><br/>
-            Weapon<input type="text" id="txtWeapon" name="txtWeapon"><br/>
-            Damage<input type="text" id="txtDamage" name="txtDamage"><br/>
+            HitDie<input type="text" id="txtHitDie" name="txtHitDie"> 
+            Speed<input type="text" id="txtSpeed" name="txtSpeed"> 
+            Weapon<input type="text" id="txtWeapon" name="txtWeapon"> 
+            Damage<input type="text" id="txtDamage" name="txtDamage"> 
             Damage Type<input type="text" id="txtDamageType" 
-                              name="txtDamageType"><br/>
+                              name="txtDamageType"> 
             
-            Armour<input type="text" id="txtArmour" name="txtArmour"><br/>
+            Armour<input type="text" id="txtArmour" name="txtArmour"> 
             Armour Class<input type="text" id="txtArmourClass" 
-                               name="txtArmourClass"><br/>
+                               name="txtArmourClass"> 
             
-            Money<input type="text" id="txtMoney" name="txtMoney"><br/>       
+            Money<input type="text" id="txtMoney" name="txtMoney">        
             
             <input type="submit">
         </form>
