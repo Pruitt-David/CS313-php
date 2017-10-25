@@ -13,28 +13,29 @@
         <form id="mainform" action="insert.php" method="POST">
             
             <input type="text" id="txtName" name="txtName"> 
-            <label for="txtName">Name</label><br/>
+            <label for="txtName"></label><br/>
             Class<input type="text" id="txtClass" name="txtClass"> 
-            
+            <label for="txtClass"></label><br/>
             Level<input type="text" id="txtLevel" name="txtLevel"> 
-            
+            <label for="txtLevel"></label><br/>
             Race<input type="text" id="txtRace" name="txtRace"> 
-            
+            <label for="txtRace"></label><br/>
             Alignment<input type="text" id="txtAlignment" 
                             name="txtAlignment"> 
-            
+            <label for="txtAlignment"></label><br/>
+        
             STR<input type="text" id="txtSTR" name="txtSTR"> 
-            
+            <label for="txtSTR"></label><br/>
             DEX<input type="text" id="txtDEX" name="txtDEX"> 
-            
+            <label for="txtDEX"></label><br/>
             CON<input type="text" id="txtCON" name="txtCON"> 
-            
+            <label for="txtCON"></label><br/>
             INT<input type="text" id="txtINT" name="txtINT"> 
-            
+            <label for="txtINT"></label><br/>
             WIS<input type="text" id="txtWIS" name="txtWIS"> 
-            
+            <label for="txtWIS"></label><br/>
             CHA<input type="text" id="txtCHA" name="txtCHA"> 
-            
+            <label for="txtCHA"></label><br/>
             
             Acrobatics<input type="text" id="txtAcrobatics" 
                              name="txtAcrobatics"> 
