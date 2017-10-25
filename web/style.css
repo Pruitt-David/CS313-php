@@ -29,16 +29,16 @@ h1{
 }
 
 h2{
-    text-align: center;
+    text-align: left;
     color: yellow;
 }
 
 h3{
-    text-align: center;
+    text-align: left;
 }
 
 p{
-    text-align: center;
+    text-align: left;
     background-color:steelblue;
     color:floralwhite;
     width: 50%;
