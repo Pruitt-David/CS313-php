@@ -10,43 +10,49 @@
         <?php
             require 'dnd.php';
         ?>
-        <form>
-            Name<input type="text"><br/>
-            Class<input type="text"><br/>
-            Level<input type="text"><br/>
-            Race<input type="text"><br/>
-            Alignment<input type="text"><br/>
-            STR<input type="text"><br/>
-            DEX<input type="text"><br/>
-            CON<input type="text"><br/>
-            INT<input type="text"><br/>
-            WIS<input type="text"><br/>
-            CHA<input type="text"><br/>
-            Acrobatics<input type="text"><br/>
-            Animal Handling<input type="text"><br/>
-            Arcana<input type="text"><br/>
-            Athletics<input type="text"><br/>
-            Deception<input type="text"><br/>
-            History<input type="text"><br/>
-            Insight<input type="text"><br/>
-            Intimidation<input type="text"><br/>
-            Medicine<input type="text"><br/>
-            Nature<input type="text"><br/>
-            Perception<input type="text"><br/>
-            Performance<input type="text"><br/>
-            Persuasion<input type="text"><br/>
-            Religion<input type="text"><br/>
-            Sleight of Hand<input type="text"><br/>
-            Stealth<input type="text"><br/>
-            Survival<input type="text"><br/>
-            HitDie<input type="text"><br/>
-            Speed<input type="text"><br/>
-            Weapon<input type="text"><br/>
-            Damage<input type="text"><br/>
-            Damage Type<input type="text"><br/>
-            Armour<input type="text"><br/>
-            Armour Class<input type="text"><br/>
-            Money<input type="text"><br/>       
+        <form id="mainform" action="insert.php" method="POST">
+            Name<input type="text" id="txtName" name="txtName"><br/>
+            Class<input type="text" id="txtClass" name="txtClass"><br/>
+            Level<input type="text" id="txtLevel" name="txtLevel"><br/>
+            Race<input type="text" id="txtRace" name="txtRace"><br/>
+            Alignment<input type="text" id="txtAlignment" name="txtAlignment"><br/>
+            
+            STR<input type="text" id="txtSTR" name="txtSTR"><br/>
+            DEX<input type="text" id="txtDEX" name="txtDEX"><br/>
+            CON<input type="text" id="txtCON" name="txtCON"><br/>
+            INT<input type="text" id="txtINT" name="txtINT"><br/>
+            WIS<input type="text" id="txtWIS" name="txtWIS"><br/>
+            CHA<input type="text" id="txtCHA" name="txtCHA"><br/>
+            
+            Acrobatics<input type="text" id="txtAcrobatics" name="txtAcrobatics"><br/>
+            Animal Handling<input type="text" id="txtAnimalHandling" name="txtAnimalHandling"><br/>
+            Arcana<input type="text" id="txtArcana" name="txtArcana"><br/>
+            Athletics<input type="text" id="txtAthletics" name="txtAthletics"><br/>
+            Deception<input type="text" id="txtDeception" name="txtDeception"><br/>
+            History<input type="text" id="txtHistory" name="txtHistory"><br/>
+            Insight<input type="text" id="txtInsight" name="txtInsight"><br/>
+            Intimidation<input type="text" id="txtIntimidation" name="txtIntimidation"><br/>
+            Medicine<input type="text" id="txtMedicine" name="txtMedicine"><br/>
+            Nature<input type="text" id="txtNature" name="txtNature"><br/>
+            Perception<input type="text" id="txtPerception" name="txtPerception"><br/>
+            Performance<input type="text" id="txtPerformance" name="txtPerformance"><br/>
+            Persuasion<input type="text" id="txtPersuasion" name="txtPersuasion"><br/>
+            Religion<input type="text" id="txtReligion" name="txtReligion"><br/>
+            Sleight of Hand<input type="text" id="txtSleightOfHand" name="txtSleightOfHand"><br/>
+            Stealth<input type="text" id="txtStealth" name="txtStealth"><br/>
+            Survival<input type="text" id="txtSurvival" name="txtSurvival"><br/>
+            
+            HitDie<input type="text" id="txtHitDie" name="txtHitDie"><br/>
+            Speed<input type="text" id="txtSpeed" name="txtSpeed"><br/>
+            Weapon<input type="text" id="txtWeapon" name="txtWeapon"><br/>
+            Damage<input type="text" id="txtDamage" name="txtDamage"><br/>
+            Damage Type<input type="text" id="txtDamageType" name="txtDamageType"><br/>
+            
+            Armour<input type="text" id="txtArmour" name="txtArmour"><br/>
+            Armour Class<input type="text" id="txtArmourClass" name="txtArmourClass"><br/>
+            
+            Money<input type="text" id="txtMoney" name="txtMoney"><br/>       
+            
             <input type="submit">
         </form>
     </body>
