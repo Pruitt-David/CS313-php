@@ -12,7 +12,7 @@
         ?>
         <form id="mainform" action="insert.php" method="POST">
             
-            <input type="text" id="txtName" name="txtName"> 
+            Name<input type="text" id="txtName" name="txtName"> 
             <label for="txtName"></label><br/>
             Class<input type="text" id="txtClass" name="txtClass"> 
             <label for="txtClass"></label><br/>
@@ -38,63 +38,75 @@
             <label for="txtCHA"></label><br/>
             
             Acrobatics<input type="text" id="txtAcrobatics" 
-                             name="txtAcrobatics"> 
+                             name="txtAcrobatics">
+            <label for="txtAcrobatics"></label><br/>
             
             Animal Handling<input type="text" id="txtAnimalHandling" 
                                   name="txtAnimalHandling"> 
-           
+           <label for="txtAnimalHandling"></label><br/>
+            
             Arcana<input type="text" id="txtArcana" name="txtArcana"> 
-           
+            <label for="txtArcana"></label><br/>
             Athletics<input type="text" id="txtAthletics" 
-                            name="txtAthletics"> 
+                            name="txtAthletics">
+            <label for="txtAthletics"></label><br/>
+            
             Deception<input type="text" id="txtDeception" 
                             name="txtDeception"> 
+            <label for="txtDeception"></label><br/>
            
             History<input type="text" id="txtHistory" name="txtHistory"> 
-            
+            <label for="txtHistory"></label><br/>
             Insight<input type="text" id="txtInsight" name="txtInsight"> 
-           
+           <label for="txtInsight"></label><br/>
             Intimidation<input type="text" id="txtIntimidation" 
                                name="txtIntimidation"> 
-           
+           <label for="txtIntimidation"></label><br/>
             Medicine<input type="text" id="txtMedicine" name="txtMedicine">
-             
+             <label for="txtMedicine"></label><br/>
            
             Nature<input type="text" id="txtNature" name="txtNature"> 
-            
+            <label for="txtNature"></label><br/>
             Perception<input type="text" id="txtPerception" 
                              name="txtPerception"> 
-           
+           <label for="txtPerception"></label><br/>
             Performance<input type="text" id="txtPerformance" 
                               name="txtPerformance"> 
-           
+           <label for="txtPerformance"></label><br/>
             Persuasion<input type="text" id="txtPersuasion" 
                              name="txtPersuasion"> 
-           
+           <label for="txtPersuasion"></label><br/>
             Religion<input type="text" id="txtReligion" name="txtReligion">
-             
+             <label for="txtRelgion"></label><br/>
            
             Sleight of Hand<input type="text" id="txtSleightOfHand" 
                                   name="txtSleightOfHand"> 
-           
+           <label for="txtSleightOfHand"></label><br/>
             Stealth<input type="text" id="txtStealth" name="txtStealth"> 
-          
+          <label for="txtStealth"></label><br/>
             Survival<input type="text" id="txtSurvival" name="txtSurvival">
-             
+             <label for="txtSurvival"></label><br/>
           
-            HitDie<input type="text" id="txtHitDie" name="txtHitDie"> 
-            Speed<input type="text" id="txtSpeed" name="txtSpeed"> 
-            Weapon<input type="text" id="txtWeapon" name="txtWeapon"> 
-            Damage<input type="text" id="txtDamage" name="txtDamage"> 
+            HitDie<input type="text" id="txtHitDie" name="txtHitDie">
+            <label for="txtHitDie"></label><br/>
+            Speed<input type="text" id="txtSpeed" name="txtSpeed">
+            <label for="txtSpeed"></label><br/>
+            Weapon<input type="text" id="txtWeapon" name="txtWeapon">
+            <label for="txtWeapon"></label><br/>
+            Damage<input type="text" id="txtDamage" name="txtDamage">
+            <label for="txtDamage"></label><br/>
             Damage Type<input type="text" id="txtDamageType" 
                               name="txtDamageType"> 
+            <label for="txtDamageType"></label><br/>
             
-            Armour<input type="text" id="txtArmour" name="txtArmour"> 
+            Armour<input type="text" id="txtArmour" name="txtArmour">
+            <label for="txtArmour"></label><br/>
             Armour Class<input type="text" id="txtArmourClass" 
                                name="txtArmourClass"> 
+            <label for="txtArmourClass"></label><br/>
             
             Money<input type="text" id="txtMoney" name="txtMoney">        
-            
+            <label for="txtMoney"></label><br/>
             <input type="submit">
         </form>
     </body>
