@@ -10,6 +10,22 @@
         <?php
             require 'dnd.php';
         ?>
-        
+        <form>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="submit">
+        </form>
     </body>
 </html>
