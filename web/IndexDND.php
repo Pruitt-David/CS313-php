@@ -10,7 +10,6 @@
         <?php
             require 'dnd.php';
         ?>
-        
         <p>Create a new Character</p>
         <form id="mainForm" action="insertCharacter.php" method="post">
             <input type="text" id="txtName" name="txtName">
