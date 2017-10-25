@@ -32,7 +32,6 @@ try
 		echo '<strong>' . $row['name'] . ' ' . $row['class'] . ':';
 		echo $row['level'] . '</strong>' . ' - ' . $row['race'];
         echo $row['alignment'] . '</strong>' . ' - ' . $row['alignment'];
-
 		echo '<br />';
 		echo 'Character: ';
 		// get the topics now for this scripture
