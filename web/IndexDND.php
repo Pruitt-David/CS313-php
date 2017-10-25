@@ -28,7 +28,6 @@
             <input type="text" id="txtalignment" name="txtalignment">
             <label for="txtalignment">Alignment</label>
 
-
             <label>Character:</label>
             <?php
             try
