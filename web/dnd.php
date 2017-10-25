@@ -94,6 +94,7 @@ try
     <th>Stealth</th>
     <th>Survival</th>
   </tr>";
+    
     foreach ($db->query('SELECT * FROM skill') as $row)
     {
         

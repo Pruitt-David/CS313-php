@@ -21,6 +21,7 @@ $db = get_db();
 <h1>DND List</h1>
 
 <?php
+    
 try
 {
 	$statement = $db->prepare('SELECT id, name, class, level, race, alignment FROM character');

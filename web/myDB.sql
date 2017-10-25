@@ -19,6 +19,7 @@ CREATE TABLE Ability
     CHA int NOT NULL
 );
 
+
 CREATE TABLE Skill
 (
     id SERIAL PRIMARY KEY NOT NULL, 

@@ -14,7 +14,6 @@
         <form id="mainForm" action="insertCharacter.php" method="post">
             <input type="text" id="txtName" name="txtName">
             <label for="txtName">Name</label>
-
         
             <input type="text" id="txtClass" name="txtClass">
             <label for="txtClass">Class</label>

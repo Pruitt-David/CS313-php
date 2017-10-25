@@ -25,6 +25,7 @@ function get_db() {
 			// into an environment variable on your local computer. That way
 			// it would work consistently regardless of whether the application
 			// were running locally or at heroku.
+            
 		}
 		// Get the various parts of the DB Connection from the URL
 		$dbopts = parse_url($dbUrl);

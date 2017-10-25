@@ -18,6 +18,7 @@ require("dbConnect.php");
 $db = get_db();
 try
 {
+    
 	// Add the Scripture
 	// We do this by preparing the query with placeholder values
 	$query = 'INSERT INTO character(name, class, level, race, alignment) VALUES(:name, :class, :level, :race, :alignment)';
